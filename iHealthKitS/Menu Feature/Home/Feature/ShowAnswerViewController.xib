@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShowAnswerViewController">
+            <connections>
+                <outlet property="answerLabel" destination="gxt-u3-2sa" id="DiM-2m-mKG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog_2016x2688_back.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dhh-zk-goh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GyO-ot-Lr5">
+                    <rect key="frame" x="10" y="267" width="355" height="400"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxt-u3-2sa">
+                            <rect key="frame" x="10" y="10" width="335" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.83529411764705885" green="0.50980392156862742" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="gxt-u3-2sa" firstAttribute="leading" secondItem="GyO-ot-Lr5" secondAttribute="leading" constant="10" id="23f-ER-AiU"/>
+                        <constraint firstItem="gxt-u3-2sa" firstAttribute="top" secondItem="GyO-ot-Lr5" secondAttribute="top" constant="10" id="DOf-X4-3NM"/>
+                        <constraint firstAttribute="height" constant="400" id="gnE-O4-kdL"/>
+                        <constraint firstAttribute="trailing" secondItem="gxt-u3-2sa" secondAttribute="trailing" constant="10" id="vTR-5s-Bhc"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog_2016x2688_dog_s.png" translatesAutoresizingMaskIntoConstraints="NO" id="U4f-8S-7QN">
+                    <rect key="frame" x="67.5" y="139" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="7CK-mW-PHh"/>
+                        <constraint firstAttribute="width" secondItem="U4f-8S-7QN" secondAttribute="height" multiplier="15:8" id="KN6-Gk-IKZ"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lv8-q5-TpE">
+                    <rect key="frame" x="287" y="218" width="50" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="n9o-md-hHO"/>
+                        <constraint firstAttribute="width" constant="50" id="tyA-8e-loS"/>
+                    </constraints>
+                    <state key="normal" title="返回">
+                        <color key="titleColor" red="0.56470588235294117" green="0.30588235294117649" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickBack:" destination="-1" eventType="touchUpInside" id="AIL-jo-SDp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="GyO-ot-Lr5" firstAttribute="top" secondItem="U4f-8S-7QN" secondAttribute="bottom" id="0pO-3J-ifV"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="leading" secondItem="Dhh-zk-goh" secondAttribute="leading" id="0v7-Cc-zTf"/>
+                <constraint firstItem="GyO-ot-Lr5" firstAttribute="top" secondItem="Lv8-q5-TpE" secondAttribute="bottom" constant="19" id="59M-2r-3YA"/>
+                <constraint firstAttribute="top" secondItem="Dhh-zk-goh" secondAttribute="top" id="Dzg-NF-fyE"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="GyO-ot-Lr5" secondAttribute="trailing" constant="10" id="FjM-v2-njh"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Dhh-zk-goh" secondAttribute="trailing" id="ONf-f9-Sw3"/>
+                <constraint firstItem="U4f-8S-7QN" firstAttribute="centerX" secondItem="GyO-ot-Lr5" secondAttribute="centerX" id="cYo-Y1-h7u"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Dhh-zk-goh" secondAttribute="bottom" id="eTK-z2-Y3u"/>
+                <constraint firstItem="GyO-ot-Lr5" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="lt8-eu-KTf"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="GyO-ot-Lr5" secondAttribute="bottom" id="oQn-Kb-Yxx"/>
+                <constraint firstItem="Lv8-q5-TpE" firstAttribute="trailing" secondItem="GyO-ot-Lr5" secondAttribute="trailing" constant="-28" id="rYx-XY-TIA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dog_2016x2688_back.png" width="2016" height="2264"/>
+        <image name="dog_2016x2688_dog_s.png" width="447" height="363"/>
+    </resources>
+</document>

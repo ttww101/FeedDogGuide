@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DogOwnerViewController">
+            <connections>
+                <outlet property="questionLabel" destination="Dbb-JM-G4r" id="xFE-Rf-Rlh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog_2016x2688_back.png" translatesAutoresizingMaskIntoConstraints="NO" id="4bh-hT-glb">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog_2016x2688_dog01.png" translatesAutoresizingMaskIntoConstraints="NO" id="3dJ-gK-gbJ">
+                    <rect key="frame" x="16" y="404" width="346" height="263"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="3dJ-gK-gbJ" secondAttribute="height" multiplier="346:263" id="Sko-IT-SDA"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog_2016x2688_talk.png" translatesAutoresizingMaskIntoConstraints="NO" id="ubY-dn-VmN">
+                    <rect key="frame" x="16" y="183" width="346" height="213"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ubY-dn-VmN" secondAttribute="height" multiplier="173:64" constant="-229.765625" id="nFQ-l9-vnO"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbb-JM-G4r">
+                    <rect key="frame" x="96" y="163" width="226" height="213"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yj5-IP-8lN">
+                    <rect key="frame" x="114" y="614" width="150" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Yj5-IP-8lN" secondAttribute="height" multiplier="150:53" id="4Pe-hC-Buq"/>
+                        <constraint firstAttribute="width" secondItem="Yj5-IP-8lN" secondAttribute="height" multiplier="150:53" id="REm-Et-x43"/>
+                        <constraint firstAttribute="width" constant="150" id="ymp-29-dnh"/>
+                    </constraints>
+                    <connections>
+                        <action selector="clickShowAnswer:" destination="-1" eventType="touchUpInside" id="vJm-9a-5eW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UoZ-tT-uNi">
+                    <rect key="frame" x="342" y="277" width="20" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Yrw-fL-k4T"/>
+                        <constraint firstAttribute="width" constant="20" id="dKe-4y-xS5"/>
+                    </constraints>
+                    <state key="normal" image="dog_1242x2208_r.png"/>
+                    <connections>
+                        <action selector="clickNextPage:" destination="-1" eventType="touchUpInside" id="9Q1-vM-Uil"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1c-RU-P3a">
+                    <rect key="frame" x="16" y="277" width="20" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="9ZS-Uy-38a"/>
+                        <constraint firstAttribute="height" constant="25" id="cXf-Jj-bJV"/>
+                    </constraints>
+                    <state key="normal" image="dog_1242x2208_l.png"/>
+                    <connections>
+                        <action selector="clickPreviousPage:" destination="-1" eventType="touchUpInside" id="dCy-Sn-Q5a"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="UoZ-tT-uNi" firstAttribute="trailing" secondItem="ubY-dn-VmN" secondAttribute="trailing" id="1YM-Pg-Psj"/>
+                <constraint firstAttribute="trailing" secondItem="4bh-hT-glb" secondAttribute="trailing" id="4ey-1z-UKS"/>
+                <constraint firstItem="3dJ-gK-gbJ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="61d-XJ-jse"/>
+                <constraint firstItem="Dbb-JM-G4r" firstAttribute="height" secondItem="ubY-dn-VmN" secondAttribute="height" id="Asr-Ww-M7s"/>
+                <constraint firstItem="UoZ-tT-uNi" firstAttribute="centerY" secondItem="ubY-dn-VmN" secondAttribute="centerY" id="ECm-WT-8Sq"/>
+                <constraint firstItem="4bh-hT-glb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Iwk-En-TFY"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="3dJ-gK-gbJ" secondAttribute="trailing" constant="13" id="Mis-Ld-tOR"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="3dJ-gK-gbJ" secondAttribute="bottom" id="O7N-2G-TiK"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="4bh-hT-glb" secondAttribute="bottom" id="Qma-RU-nks"/>
+                <constraint firstItem="Q1c-RU-P3a" firstAttribute="centerY" secondItem="ubY-dn-VmN" secondAttribute="centerY" id="SdW-9E-3Ea"/>
+                <constraint firstItem="ubY-dn-VmN" firstAttribute="centerX" secondItem="3dJ-gK-gbJ" secondAttribute="centerX" id="W9O-SU-plD"/>
+                <constraint firstItem="3dJ-gK-gbJ" firstAttribute="top" secondItem="ubY-dn-VmN" secondAttribute="bottom" constant="8" id="ZxK-XR-g0H"/>
+                <constraint firstItem="Dbb-JM-G4r" firstAttribute="centerY" secondItem="ubY-dn-VmN" secondAttribute="centerY" constant="-20" id="cG8-5U-Pno"/>
+                <constraint firstItem="Yj5-IP-8lN" firstAttribute="bottom" secondItem="3dJ-gK-gbJ" secondAttribute="bottom" id="dSy-HS-uwe"/>
+                <constraint firstItem="Dbb-JM-G4r" firstAttribute="width" secondItem="ubY-dn-VmN" secondAttribute="width" constant="-120" id="pKF-kl-9PN"/>
+                <constraint firstItem="Dbb-JM-G4r" firstAttribute="centerX" secondItem="ubY-dn-VmN" secondAttribute="centerX" constant="20" id="qFY-V6-n2H"/>
+                <constraint firstItem="Yj5-IP-8lN" firstAttribute="centerX" secondItem="3dJ-gK-gbJ" secondAttribute="centerX" id="sOU-4e-zGF"/>
+                <constraint firstItem="4bh-hT-glb" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="sfg-Zl-mbg"/>
+                <constraint firstItem="ubY-dn-VmN" firstAttribute="width" secondItem="3dJ-gK-gbJ" secondAttribute="width" id="tWK-SZ-rkn"/>
+                <constraint firstItem="Q1c-RU-P3a" firstAttribute="leading" secondItem="ubY-dn-VmN" secondAttribute="leading" id="xo1-d6-p9k"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dog_1242x2208_l.png" width="25" height="49"/>
+        <image name="dog_1242x2208_r.png" width="25" height="49"/>
+        <image name="dog_2016x2688_back.png" width="2016" height="2264"/>
+        <image name="dog_2016x2688_dog01.png" width="1222" height="982"/>
+        <image name="dog_2016x2688_talk.png" width="1223" height="743"/>
+    </resources>
+</document>
